@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container justify-content-center vw-100">
+    <div class="row">
+      <h1>Número Mayor</h1>
+      <hr />
+      <div class="col-md-12 row">
+        <div class="col-md-4 mb-3">
+          <label for="num1" class="form-label"><b>Ingrese Y:</b></label>
+          <input type="number" class="form-control" id="num1" name="num1" placeholder="Ingrese un número" />
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="num2" class="form-label"><b>Ingrese X:</b></label>
+          <input type="number" class="form-control" id="num2" name="num2" placeholder="Ingrese un número" />
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="" class="form-label">&numsp;</label>
+          <div class="d-flex">
+            <button type="button" class="btn btn-primary w-50" id="btn_generar">
+              Generar</button>&numsp;
+            <button type="button" class="btn btn-danger w-50" id="btn_limpiar">
+              Limpiar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <table class="table table-success table-striped table-bordered text-center" style="width: 100%">
+        <tbody id="tbody_resultado"></tbody>
+      </table>
+      <span id="n_menor"></span><br />
+      <span id="n_mayor"></span>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>
